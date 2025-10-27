@@ -1,5 +1,5 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "cloudflare-claude-sandbox"
+name = "claude-code-templates"
 main = "src/index.ts"
 compatibility_date = "2024-01-01"
 compatibility_flags = ["nodejs_compat"]
@@ -41,10 +41,4 @@ enabled = true
 
 # Usage model - required for Durable Objects
 [usage_model]
-# Use 'bundled' for Workers Paid plan ($5/month)
-# Includes 10M requests/month and unlimited Durable Objects
-# For free tier, comment this out (limited functionality)
-# usage_model = "bundled"
-
-# Note: Uncomment the line above after setting up Workers Paid plan
-# Or remove this section entirely for the free tier (sandbox will be limited)
+usage_model = "bundled"
